@@ -1,0 +1,23 @@
+#col_rules_doc {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width : 100%;
+    max-width : 8.5in;
+    padding-left : 30px;
+    padding-right: 30px;
+    border : none;
+    height : 100%;
+}
+
+body, main {
+    height : 100%;
+}
+
+body {
+    position: absolute;
+    width : 100%;
+}
