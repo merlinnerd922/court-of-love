@@ -4,4 +4,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/courbfhe/public_html/
-    - /bin/cp -rf * $DEPLOYPATH
+    - yes | /bin/cp -rf * $DEPLOYPATH
