@@ -3,5 +3,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/courbfhe/public_html/
-    - yes | /bin/cp -rf * $DEPLOYPATH
+    - pwd
