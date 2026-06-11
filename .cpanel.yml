@@ -2,4 +2,6 @@
 
 deployment:
   tasks:
-    - pwd
+    - export DEPLOYPATH=/home/courbfhe/public_html
+    - export SRCPATH=/home/courbfhe/repositories/court-of-love/*
+    - cp -r $SRCPATH $DEPLOYPATH
