@@ -2,4 +2,4 @@
 
 deployment:
   tasks:
-    pwd
+    - pwd
