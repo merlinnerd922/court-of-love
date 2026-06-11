@@ -1,6 +1,6 @@
 
 
----
 deployment:
   tasks:
-    - pwd
+    - export DEPLOYPATH=/home/courbfhe/public_html
+    - /bin/cp -fr * $DEPLOYPATH
