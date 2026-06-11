@@ -3,4 +3,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/courbfhe/public_html
-    - /bin/cp -fr * $DEPLOYPATH
+    - cp -frd $SRCDIR $DEPLOYPATH
