@@ -44,12 +44,12 @@ body {
 
 @font-face {
     font-family: MigaeSemibold;
-    src : url("./MigaeSemibold.otf") format("opentype");")
+    src : url("./MigaeSemibold.otf") format("opentype");
 }
 
 @font-face {
     font-family: RusticRoadway;
-    src : url("./RusticRoadway.otf") format("opentype");")
+    src : url("./RusticRoadway.otf") format("opentype");
 }
 
 html {

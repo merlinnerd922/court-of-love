@@ -9,9 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage":"http://courtoflove.ca",
   "dependencies": {
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "tauri": "^0.15.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
