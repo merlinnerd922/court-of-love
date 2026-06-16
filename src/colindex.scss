@@ -1,0 +1,101 @@
+$font-family_1: MigaeSemibold, serif;
+$font-family_2: RusticRoadway, serif;
+$hot_pink: deeppink;
+$dark_red: #330002;
+$medium_red: darkred;
+$golden: #ffb82c;
+
+/* Contains rules that are central to the CoL-specific index.css document itself. */
+@font-face {
+    font-family: MigaeSemibold;
+    src: url("./MigaeSemibold.otf") format("opentype");
+}
+@font-face {
+    font-family: RusticRoadway;
+    src: url("./RusticRoadway.otf") format("opentype");
+}
+#col_rules_doc {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 8.5in;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    height: 1056px;
+}
+#col_title {
+    text-align: center;
+    font-size: 144px;
+    font-family: $font-family_1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#col_header {
+    background-color: $hot_pink;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#col_slogan {
+    font-family: $font-family_2;
+    text-align: center;
+    font-size: 36px;
+}
+body {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: $dark_red;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+html {
+    height: 100%;
+}
+main {
+    position: relative;
+    width: 100%;
+    background-color: $medium_red;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: auto;
+}
+#col_main_body {
+    overflow: auto;
+    display: block;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#col_menu_bar {
+    background-color: $golden;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    height: 50px;
+    width: 100%;
+    >li {
+        list-style-type: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 100%;
+        display: inline-block;
+        margin-top: auto;
+        margin-bottom: auto;
+        min-width: 160px;
+        align-content: center;
+        >span {
+            vertical-align: middle;
+            display: inline-block;
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+        }
+    }
+}
