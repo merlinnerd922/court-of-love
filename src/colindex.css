@@ -7,12 +7,24 @@
   font-family: RusticRoadway;
   src: url("./RusticRoadway.otf") format("opentype");
 }
+@font-face {
+  font-family: Lato;
+  src: url("./font/Lato-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: LucySaidOK;
+  src: url("./font/Lucy Said Ok Personal Use.ttf") format("opentype");
+}
+@font-face {
+  font-family: SymphonyCalligraphy;
+  src: url("./font/SymphonieCalligraphyDEMO-Regular.otf") format("opentype");
+}
 #col_rules_doc {
   justify-content: center;
   text-align: center;
   align-content: center;
   position: relative;
-  display: block;
+  display: flex;
   box-sizing: border-box;
   width: 100%;
   max-width: 8.5in;
@@ -20,6 +32,15 @@
   padding-right: 30px;
   border: none;
   height: 1056px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col_menu_selected {
+  background-color: pink;
+}
+.col_menu_selected > span {
+  text-decoration: underline yellow;
 }
 
 #col_title {
@@ -37,7 +58,7 @@
 }
 
 #col_slogan {
-  font-family: RusticRoadway, serif;
+  font-family: SymphonyCalligraphy, serif;
   text-align: center;
   font-size: 36px;
 }
@@ -74,7 +95,9 @@ main {
 }
 
 #col_menu_bar {
-  background-color: #ffb82c;
+  font-family: Lato, serif;
+  font-size: 18px;
+  background-color: #ff5cff;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;

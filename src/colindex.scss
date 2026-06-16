@@ -1,25 +1,27 @@
-$font-family_1: MigaeSemibold, serif;
-$font-family_2: RusticRoadway, serif;
-$hot_pink: deeppink;
+$title_font: MigaeSemibold, serif;
+$slogan_font: SymphonyCalligraphy, serif;
+$menu_font : Lato, serif;
+$selected_menu_item: pink;
+
 $dark_red: #330002;
-$medium_red: darkred;
-$golden: #ffb82c;
+$medium_dark_red : darkred;
+
+$header_colour: deeppink;
+$background_colour: $dark_red;
+$main_section_background_colour: $medium_dark_red;
+$menu_bar_colour: #ff5cff;
 
 /* Contains rules that are central to the CoL-specific index.css document itself. */
-@font-face {
-    font-family: MigaeSemibold;
-    src: url("./MigaeSemibold.otf") format("opentype");
-}
-@font-face {
-    font-family: RusticRoadway;
-    src: url("./RusticRoadway.otf") format("opentype");
-}
+@import "font_rules";
+
+
+
 #col_rules_doc {
     justify-content: center;
     text-align: center;
     align-content: center;
     position: relative;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     width: 100%;
     max-width: 8.5in;
@@ -27,21 +29,33 @@ $golden: #ffb82c;
     padding-right: 30px;
     border: none;
     height: 1056px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.col_menu_selected {
+    background-color: $selected_menu_item;
+    >span {
+        text-decoration: underline yellow;
+    }
+
+
+}
+
 #col_title {
     text-align: center;
     font-size: 144px;
-    font-family: $font-family_1;
+    font-family: $title_font;
     margin-top: 0;
     margin-bottom: 0;
 }
 #col_header {
-    background-color: $hot_pink;
+    background-color: $header_colour;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 #col_slogan {
-    font-family: $font-family_2;
+    font-family: $slogan_font;
     text-align: center;
     font-size: 36px;
 }
@@ -49,7 +63,7 @@ body {
     height: 100%;
     width: 100%;
     display: block;
-    background-color: $dark_red;
+    background-color: $background_colour;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -59,7 +73,7 @@ html {
 main {
     position: relative;
     width: 100%;
-    background-color: $medium_red;
+    background-color: $main_section_background_colour;
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
@@ -73,7 +87,9 @@ main {
     padding-bottom: 40px;
 }
 #col_menu_bar {
-    background-color: $golden;
+    font-family: Lato, serif;
+    font-size : 18px;
+    background-color: $menu_bar_colour;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
