@@ -1,0 +1,15 @@
+$col_menu_underline: underline skyblue;
+$title_font_family: MigaeSemibold, serif;
+$slogan_font_family: SymphonyCalligraphy, serif;
+$menu_font: Lato, serif;
+
+@mixin title_font {
+    font-size: clamp(9vw, 10vw, 150px);
+    font-family: $title_font_family;
+    white-space: nowrap;
+}
+
+@mixin slogan_font {
+    font-family: $slogan_font_family;
+    font-size: 4vw;
+}

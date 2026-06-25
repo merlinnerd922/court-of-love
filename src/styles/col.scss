@@ -1,64 +1,89 @@
-$title_font: MigaeSemibold, serif;
-$slogan_font: SymphonyCalligraphy, serif;
-$menu_font : Lato, serif;
 $selected_menu_item: pink;
-
 $dark_red: #330002;
-$medium_dark_red : darkred;
-
+$medium_dark_red: darkred;
 $header_colour: deeppink;
 $background_colour: $dark_red;
 $main_section_background_colour: $medium_dark_red;
 $menu_bar_colour: #ff5cff;
 
 /* Contains rules that are central to the CoL-specific index.css document itself. */
-@import "font_rules";
+@import "additional_fonts";
+@import "col_page_fonts";
 
-
-
-#col_rules_doc {
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    position: relative;
-    display: flex;
+@mixin col_main_content {
     box-sizing: border-box;
     width: 100%;
     max-width: 8.5in;
-    padding-left: 30px;
-    padding-right: 30px;
+    overflow-y: hidden;
     border: none;
-    height: 1056px;
+    position: relative;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+    background-color: pink;
+    padding: 20px 30px;
+
+    h1 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+#col_rules_doc {
+    @include col_main_content();
+}
+
+#col_home {
+    @include col_main_content();
+
+    h1 {
+        font-size: clamp(25px, 5vw, 45px);
+    }
+}
+
+.col_home_info_line {
+    font-size: clamp(25px, 5vw, 45px);
 }
 
 .col_menu_selected {
     background-color: $selected_menu_item;
-    >span {
-        text-decoration: underline yellow;
+
+    > span {
+        text-decoration: $col_menu_underline;
     }
-
-
 }
 
 #col_title {
     text-align: center;
-    font-size: 144px;
-    font-family: $title_font;
+    @include title_font;
     margin-top: 0;
     margin-bottom: 0;
 }
+
 #col_header {
     background-color: $header_colour;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+
 }
+
 #col_slogan {
-    font-family: $slogan_font;
+    @include slogan_font;
     text-align: center;
-    font-size: 36px;
+
 }
+
 body {
     height: 100%;
     width: 100%;
@@ -67,9 +92,11 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
 html {
     height: 100%;
 }
+
 main {
     position: relative;
     width: 100%;
@@ -79,6 +106,7 @@ main {
     height: 100%;
     overflow: auto;
 }
+
 #col_main_body {
     overflow: auto;
     display: block;
@@ -86,16 +114,24 @@ main {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 #col_menu_bar {
     font-family: Lato, serif;
-    font-size : 18px;
+    font-size: 18px;
     background-color: $menu_bar_colour;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     height: 50px;
     width: 100%;
-    >li {
+
+
+    > li {
+
+        &.colCurrentActiveLink {
+            background-color: lighten(red, 15%);
+        }
+
         list-style-type: none;
         padding-left: 5px;
         padding-right: 5px;
@@ -105,13 +141,16 @@ main {
         margin-bottom: auto;
         min-width: 160px;
         align-content: center;
-        >span {
+
+        span {
             vertical-align: middle;
             display: inline-block;
             width: 100%;
             margin-top: auto;
             margin-bottom: auto;
             text-align: center;
+            color: white;
+            font-weight: bold;
         }
     }
 }

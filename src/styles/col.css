@@ -1,52 +1,93 @@
 /* Contains rules that are central to the CoL-specific index.css document itself. */
 @font-face {
   font-family: MigaeSemibold;
-  src: url("./MigaeSemibold.otf") format("opentype");
+  src: url("../font/MigaeSemibold.otf") format("opentype");
 }
 @font-face {
   font-family: RusticRoadway;
-  src: url("./RusticRoadway.otf") format("opentype");
+  src: url("../font/RusticRoadway.otf") format("opentype");
 }
 @font-face {
   font-family: Lato;
-  src: url("./font/Lato-Regular.ttf") format("opentype");
+  src: url("../font/Lato-Regular.ttf") format("opentype");
 }
 @font-face {
   font-family: LucySaidOK;
-  src: url("./font/Lucy Said Ok Personal Use.ttf") format("opentype");
+  src: url("../font/Lucy Said Ok Personal Use.ttf") format("opentype");
 }
 @font-face {
   font-family: SymphonyCalligraphy;
-  src: url("./font/SymphonieCalligraphyDEMO-Regular.otf") format("opentype");
+  src: url("../font/SymphonieCalligraphyDEMO-Regular.otf") format("opentype");
 }
 #col_rules_doc {
-  justify-content: center;
-  text-align: center;
-  align-content: center;
-  position: relative;
-  display: flex;
   box-sizing: border-box;
   width: 100%;
   max-width: 8.5in;
-  padding-left: 30px;
-  padding-right: 30px;
+  overflow-y: hidden;
   border: none;
-  height: 1056px;
+  position: relative;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  background-color: pink;
+  padding: 20px 30px;
+}
+#col_rules_doc h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+#col_rules_doc hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#col_home {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 8.5in;
+  overflow-y: hidden;
+  border: none;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  background-color: pink;
+  padding: 20px 30px;
+}
+#col_home h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+#col_home hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#col_home h1 {
+  font-size: clamp(25px, 5vw, 45px);
+}
+
+.col_home_info_line {
+  font-size: clamp(25px, 5vw, 45px);
 }
 
 .col_menu_selected {
   background-color: pink;
 }
 .col_menu_selected > span {
-  text-decoration: underline yellow;
+  text-decoration: underline skyblue;
 }
 
 #col_title {
   text-align: center;
-  font-size: 144px;
+  font-size: clamp(9vw, 10vw, 150px);
   font-family: MigaeSemibold, serif;
+  white-space: nowrap;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -55,12 +96,15 @@
   background-color: deeppink;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #col_slogan {
   font-family: SymphonyCalligraphy, serif;
+  font-size: 4vw;
   text-align: center;
-  font-size: 36px;
 }
 
 body {
@@ -104,6 +148,9 @@ main {
   height: 50px;
   width: 100%;
 }
+#col_menu_bar > li.colCurrentActiveLink {
+  background-color: rgb(255, 76.5, 76.5);
+}
 #col_menu_bar > li {
   list-style-type: none;
   padding-left: 5px;
@@ -115,13 +162,15 @@ main {
   min-width: 160px;
   align-content: center;
 }
-#col_menu_bar > li > span {
+#col_menu_bar > li span {
   vertical-align: middle;
   display: inline-block;
   width: 100%;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
-/*# sourceMappingURL=colindex.css.map */
+/*# sourceMappingURL=col.css.map */
