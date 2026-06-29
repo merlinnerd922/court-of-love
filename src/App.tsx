@@ -20,7 +20,7 @@ function App() {
         </header>
         <nav id="col_menu_bar">
             {ColPageLink(getCurrentSubUrl(), MAIN_SUB_URL, "Home")}
-            {ColPageLink(getCurrentSubUrl(), RULES_SUB_URL, "Rules and Guidelines")}
+            {ColPageLink(getCurrentSubUrl(), RULES_SUB_URL, "Rules")}
         </nav>
         <div id="col_main_body">
             <Outlet/>

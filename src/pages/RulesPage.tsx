@@ -4,13 +4,13 @@ import {marked} from "marked";
 
 export default function RulesPage() {
 
-    const [colRulesMarkdownString, setcolRulesMarkdownString] = useState("");
+    const [colRulesMarkdownString, setColRulesMarkdownString] = useState("");
 
     useEffect(() => {
         fetch(colRulesTextResponse)
             .then(r => r.text())
             .then(text => {
-                setcolRulesMarkdownString(text);
+                setColRulesMarkdownString(text);
             });
     });
 
