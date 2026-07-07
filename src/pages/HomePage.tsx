@@ -10,7 +10,7 @@ export default function HomePage() {
             <p className={colHomeInfoClass}><strong>Where: </strong>Downtown Toronto</p>
             <p className={colHomeInfoClass}><strong>Address: </strong>TBA, released in a private event-related Telegram channel
                 after the event verifies you</p>
-            <p className={colHomeInfoClass}><strong>Telegram: </strong><a>https://t.me/CoLPride35</a></p>
+            <p className={colHomeInfoClass}><strong>Telegram: </strong><a>https://t.me/CoL35July</a></p>
         </div>
     </>;
 }

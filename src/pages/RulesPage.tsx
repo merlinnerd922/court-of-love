@@ -4,7 +4,7 @@ import {marked} from "marked";
 
 export default function RulesPage() {
 
-    const [colRulesMarkdownString, setColRulesMarkdownString] = useState("");
+    const [colRulesMarkdownString, setColRulesMarkdownString] = useState("Loading...");
 
     useEffect(() => {
         fetch(colRulesTextResponse)
