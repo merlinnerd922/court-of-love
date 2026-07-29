@@ -4,6 +4,7 @@ import {Outlet, Route, Routes, useLocation} from "react-router";
 import {ColPageLink} from "./ColPageLink.tsx";
 
 
+
 function getCurrentSubUrl() {
     return () => useLocation().pathname;
 }

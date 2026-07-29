@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import colRulesTextResponse from "../assets/Court of Love Rules.markup.txt";
 import {marked} from "marked";
+import '../styles/col_rules.scss';
 
 export default function RulesPage() {
 

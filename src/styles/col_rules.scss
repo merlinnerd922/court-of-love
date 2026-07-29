@@ -1,0 +1,11 @@
+@use "my_mixins.scss" as *;
+
+h1 {
+    @include margin-vertical(0px);
+}
+
+li, p {
+    line-height: 1.35;
+    font-size: clamp(15px, 5vw, 20px);
+}
+

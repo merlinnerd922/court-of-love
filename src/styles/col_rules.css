@@ -1,0 +1,11 @@
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+li, p {
+  line-height: 1.35;
+  font-size: clamp(15px, 5vw, 20px);
+}
+
+/*# sourceMappingURL=col_rules.css.map */

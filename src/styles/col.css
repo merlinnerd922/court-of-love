@@ -34,7 +34,7 @@
   background-color: pink;
   padding: 20px 30px;
 }
-#col_rules_doc h1 {
+#col_rules_doc #col_next_event_heading {
   margin-bottom: 0;
   padding-bottom: 0;
   margin-top: 0;
@@ -59,7 +59,7 @@
   background-color: pink;
   padding: 20px 30px;
 }
-#col_home h1 {
+#col_home #col_next_event_heading {
   margin-bottom: 0;
   padding-bottom: 0;
   margin-top: 0;
@@ -71,9 +71,26 @@
 #col_home h1 {
   font-size: clamp(25px, 5vw, 45px);
 }
+#col_home > p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .col_home_info_line {
   font-size: clamp(25px, 5vw, 45px);
+}
+
+ul {
+  list-style-type: "- ";
+}
+
+#col_contact > p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#col_contact > ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .col_menu_selected {
@@ -149,7 +166,7 @@ main {
   width: 100%;
 }
 #col_menu_bar > li.colCurrentActiveLink {
-  background-color: rgb(255, 76.5, 76.5);
+  background-color: rgb(100%, 30%, 30%);
 }
 #col_menu_bar > li {
   list-style-type: none;
@@ -171,6 +188,20 @@ main {
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+#col_home_next_event_title {
+  text-align: center;
+  color: purple;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+#col_home_next_event_title sup {
+  font-size: clamp(10px, 5vw, 20px);
+}
+
+sub {
+  font-size: clamp(10px, 5vw, 15px);
 }
 
 /*# sourceMappingURL=col.css.map */
