@@ -7,7 +7,7 @@ export default function HomePage() {
             <h1 id="col_next_event_heading">Next event details:</h1>
             <hr/>
             <h1 id="col_home_next_event_title">Court of Love #36 : Bone China<sup>1</sup></h1>
-            <p className={colHomeInfoClass}><strong>Cover: </strong>$5</p>
+            <p className={colHomeInfoClass}><strong>Cover: </strong>$5 (donations welcome as well)</p>
             <p className={colHomeInfoClass}><strong>Date: </strong>Saturday, August 29th, 2026</p>
             <p className={colHomeInfoClass}><strong>Time: </strong>6pm - 9pm</p>
             <p className={colHomeInfoClass}><strong>Where: </strong>Downtown Toronto</p>
