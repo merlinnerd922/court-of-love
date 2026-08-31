@@ -6,9 +6,9 @@ export default function HomePage() {
         <div id="col_home">
             <h1 id="col_next_event_heading">Next event details:</h1>
             <hr/>
-            <h1 id="col_home_next_event_title">Court of Love #36 : Bone China<sup>1</sup></h1>
-            <p className={colHomeInfoClass}><strong>Cover: </strong>$5 (donations welcome as well)</p>
-            <p className={colHomeInfoClass}><strong>Date: </strong>Saturday, August 29th, 2026</p>
+            <h1 id="col_home_next_event_title">Court of Love #37 : Alabaster<sup>1</sup></h1>
+            <p className={colHomeInfoClass}><strong>Cover: </strong>$5 (additional donations welcome as well)</p>
+            <p className={colHomeInfoClass}><strong>Date: </strong>Friday, September 25th, 2026</p>
             <p className={colHomeInfoClass}><strong>Time: </strong>6pm - 9pm</p>
             <p className={colHomeInfoClass}><strong>Where: </strong>Downtown Toronto</p>
             <p className={colHomeInfoClass}><strong>Address: </strong>TBA, released in a private event-related Telegram
@@ -21,8 +21,7 @@ export default function HomePage() {
                     <li className={colHomeInfoClass}>@merlinnerd1017 on Discord</li>
                 </ul>
             </div>
-            <sub>1. Not a racial reference, but a reference to the 36th wedding anniversary gift, in line with the event
-                being number 36</sub>
+            <sub>1. Alabaster is a gift given for the 37th anniversary of a marriage in some contexts. I thought it might be fun to number my events in a similar way!</sub>
         </div>
     </>;
 }
