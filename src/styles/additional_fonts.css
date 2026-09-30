@@ -3,16 +3,8 @@
   src: url("../font/MigaeSemibold.otf") format("opentype");
 }
 @font-face {
-  font-family: RusticRoadway;
-  src: url("../font/RusticRoadway.otf") format("opentype");
-}
-@font-face {
   font-family: Lato;
   src: url("../font/Lato-Regular.ttf") format("opentype");
-}
-@font-face {
-  font-family: LucySaidOK;
-  src: url("../font/Lucy Said Ok Personal Use.ttf") format("opentype");
 }
 @font-face {
   font-family: SymphonyCalligraphy;
