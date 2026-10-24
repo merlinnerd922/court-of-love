@@ -8,7 +8,7 @@ export default function HomePage() {
             <hr/>
             <h1 id="col_home_next_event_title">Court of Love #37 : Alabaster<sup>1</sup></h1>
             <p className={colHomeInfoClass}><strong>Cover: </strong>$5 (additional donations welcome as well)</p>
-            <p className={colHomeInfoClass}><strong>Date: </strong>Saturday, November 21st, 2026 (rescheduled for this date from September)</p>
+            <p className={colHomeInfoClass}><strong>Date: </strong>Saturday, November 21st, 2026 (rescheduled for this date from October)</p>
             <p className={colHomeInfoClass}><strong>Time: </strong>6pm - 9pm</p>
             <p className={colHomeInfoClass}><strong>Where: </strong>Downtown Toronto</p>
             <p className={colHomeInfoClass}><strong>Address: </strong>TBA, released in a private event-related Telegram
